@@ -1,9 +1,9 @@
-body{
+body {
     margin: 0;
 }
 
-#topBanner{
-    background-color: grey;
+#topBanner {
+    background-color: #B36A5E;
 
     /* height of banner */
     height: 100px;
@@ -27,20 +27,20 @@ body{
 
 }
 
-#logo{
+#logo {
     /* these two put the logo to the left side */
     margin-left: 20px;
     margin-right: auto;
 
     /* box design */
-    background-color: white;
+    background-color: #C89F9C;
     padding: 30px;
     padding-left: 60px;
     padding-right: 60px;
     border: solid 1px black;
 }
 
-#linksBox{
+#linksBox {
     /* had to make a separate container for the links otherwise margin-right
     wouldnt work in #topBanner as the position is fixed */
     display: flex;
@@ -49,9 +49,9 @@ body{
 
 }
 
-.links{
+.links {
     /* design for the boxes */
-    background-color: white;
+    background-color: #C89F9C;
     padding: 5px;
     border: solid 1px black;
     padding-right: 30px;
@@ -59,8 +59,8 @@ body{
 }
 
 /* placeholder for shopping cart symbol */
-#shoppingCart{
-    background-color: white;
+#shoppingCart {
+    background-color: #C89F9C;
     height: 30px;
     width: 60px;
     border: solid 1px black;
@@ -74,11 +74,11 @@ body{
     flex-shrink: 0;
 }
 
-#middle{
+#middle {
     /* ensures that the main body content begins where the banner ends */
     /* this is because the top banner overlaps the middle */
     padding-top: 120px;
-    background-color: white;
+    background-color: #EED7C5;
     /* is a wide as the entire page */
     width: 100%;
     /* is atleast 1 viewport tall */
@@ -91,17 +91,17 @@ body{
 
 }
 
-.rowTitle{
-        /* design for the boxes */
-        background-color: white;
-        padding: 5px;
-        border: solid 1px black;
-        border-radius: 5px;
-        /* is as wide as the content */
-        width: max-content;
+.rowTitle {
+    /* design for the boxes */
+    background-color: white;
+    padding: 5px;
+    border: solid 1px black;
+    border-radius: 5px;
+    /* is as wide as the content */
+    width: max-content;
 }
 
-.middleRows{
+.middleRows {
     /* margin-top: 20px; */
     display: flex;
     flex-direction: row;
@@ -115,7 +115,7 @@ body{
 }
 
 /* placeholder for where the images etc. will go */
-.concerts{
+.concerts {
     background-color: grey;
     height: 200px;
     width: 400px;
@@ -127,12 +127,12 @@ body{
 }
 
 /* could be added into middle rows (originally was only on the top two rows) */
-.separatingLine{
+.separatingLine {
     border-bottom: solid 1px black;
 }
 
 /* placeholder for where the images etc. will go */
-.merch{
+.merch {
     background-color: grey;
     height: 200px;
     width: 400px;
@@ -143,7 +143,7 @@ body{
 }
 
 /* placeholder for where the images etc. will go */
-.artists{
+.artists {
     background-color: grey;
     height: 200px;
     width: 400px;
@@ -153,8 +153,8 @@ body{
 
 }
 
-#bottomBanner{
-    background-color: grey;
+#bottomBanner {
+    background-color: #B36A5E;
     height: 100px;
     width: 100%;
     /* position: relative; */
