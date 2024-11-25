@@ -1,84 +1,12 @@
-body {
-    margin: 0;
-}
 
-#topBanner {
-    background-color: #B36A5E;
-
-    /* height of banner */
-    height: 100px;
-    /* ensures that the navbar stays at the top when scrolling */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    /* ensures it overlaps everything */
-    z-index: 9999;
-    /* makes it a flexbox container */
-    display: flex;
-    /* puts the links at the end */
-    /* justify-content: flex-end; */
-    align-items: end;
-
-    border-bottom: solid 1px black;
-
-    /* padding-left: 20px; */
-    /* padding-right: 50px; */
-
-}
-
-#logo {
-    /* these two put the logo to the left side */
-    margin-left: 20px;
-    margin-right: auto;
-
-    /* box design */
-    background-color: #C89F9C;
-    padding: 30px;
-    padding-left: 60px;
-    padding-right: 60px;
-    border: solid 1px black;
-}
-
-#linksBox {
-    /* had to make a separate container for the links otherwise margin-right
-    wouldnt work in #topBanner as the position is fixed */
-    display: flex;
-    flex-direction: row;
-    margin-right: 50px;
-
-}
-
-.links {
-    /* design for the boxes */
-    background-color: #C89F9C;
-    padding: 5px;
-    border: solid 1px black;
-    padding-right: 30px;
-    border-radius: 5px;
-}
-
-/* placeholder for shopping cart symbol */
-#shoppingCart {
-    background-color: #C89F9C;
-    height: 30px;
-    width: 60px;
-    border: solid 1px black;
-    /* makes it round */
-    border-radius: 50%;
-    /* aligns it to the top */
-    align-self: flex-start;
-    /* gives space around itself */
-    margin: 10px;
-    /* disabled the shopping cart from shrinking when the screen is smaller*/
-    flex-shrink: 0;
-}
-
-#middle {
+#middle{
     /* ensures that the main body content begins where the banner ends */
     /* this is because the top banner overlaps the middle */
+    box-sizing: border-box;
     padding-top: 120px;
-    background-color: #EED7C5;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: white;
     /* is a wide as the entire page */
     width: 100%;
     /* is atleast 1 viewport tall */
@@ -91,17 +19,17 @@ body {
 
 }
 
-.rowTitle {
-    /* design for the boxes */
-    background-color: white;
-    padding: 5px;
-    border: solid 1px black;
-    border-radius: 5px;
-    /* is as wide as the content */
-    width: max-content;
+.rowTitle{
+        /* design for the boxes */
+        background-color: white;
+        padding: 5px;
+        border: solid 1px black;
+        border-radius: 5px;
+        /* is as wide as the content */
+        width: max-content;
 }
 
-.middleRows {
+.middleRows{
     /* margin-top: 20px; */
     display: flex;
     flex-direction: row;
@@ -115,7 +43,7 @@ body {
 }
 
 /* placeholder for where the images etc. will go */
-.concerts {
+.concerts{
     background-color: grey;
     height: 200px;
     width: 400px;
@@ -123,16 +51,17 @@ body {
     /* has it shrink when there is no space on screen */
     align-self: center;
     flex-shrink: 1;
+    aspect-ratio: 1;
 
 }
 
 /* could be added into middle rows (originally was only on the top two rows) */
-.separatingLine {
+.separatingLine{
     border-bottom: solid 1px black;
 }
 
 /* placeholder for where the images etc. will go */
-.merch {
+.merch{
     background-color: grey;
     height: 200px;
     width: 400px;
@@ -143,23 +72,12 @@ body {
 }
 
 /* placeholder for where the images etc. will go */
-.artists {
+.artists{
     background-color: grey;
     height: 200px;
     width: 400px;
     justify-content: center;
     align-self: center;
     flex-shrink: 1;
-
-}
-
-#bottomBanner {
-    background-color: #B36A5E;
-    height: 100px;
-    width: 100%;
-    /* position: relative; */
-    bottom: 0;
-    left: 0;
-    z-index: 9999;
 
 }
