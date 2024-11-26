@@ -43,15 +43,20 @@
 }
 
 /* placeholder for where the images etc. will go */
-.concerts{
+.placeholderItems{
     background-color: grey;
-    height: 200px;
+    /* this allows the box to retain its aspect ratio when the screen gets resized */
+    aspect-ratio: 2;
     width: 400px;
+
+    /* width: 400px; */
+
 
     /* has it shrink when there is no space on screen */
     align-self: center;
     flex-shrink: 1;
-    aspect-ratio: 1;
+
+
 
 }
 
@@ -63,7 +68,7 @@
 /* placeholder for where the images etc. will go */
 .merch{
     background-color: grey;
-    height: 200px;
+    aspect-ratio: 2;
     width: 400px;
     justify-content: center;
     align-self: center;
@@ -74,7 +79,7 @@
 /* placeholder for where the images etc. will go */
 .artists{
     background-color: grey;
-    height: 200px;
+    aspect-ratio: 2;
     width: 400px;
     justify-content: center;
     align-self: center;
