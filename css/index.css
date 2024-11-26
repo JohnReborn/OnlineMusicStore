@@ -10,7 +10,7 @@
     /* is a wide as the entire page */
     width: 100%;
     /* is atleast 1 viewport tall */
-    min-height: 100vh;
+    /* min-height: 90vh; */
     z-index: 1;
 
     /* this ensures makes a flex container for the rows and makes them face downwards */
@@ -40,6 +40,8 @@
     /* is as wide as the screen */
     width: 100%;
     flex: 1;
+    padding: 20px;
+    flex-wrap: wrap;
 }
 
 /* placeholder for where the images etc. will go */
