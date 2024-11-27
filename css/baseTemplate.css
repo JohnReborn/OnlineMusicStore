@@ -47,7 +47,8 @@ body {
     flex-direction: row;
     margin-right: 50px;
     margin-left: 20px;
-    gap: 20px;
+    gap: 10px;
+    flex-wrap: wrap;
 
 }
 
@@ -72,7 +73,7 @@ body {
     /* aligns it to the top */
     align-self: flex-start;
     /* gives space around itself */
-    margin: 10px;
+    /* margin: 10px; */
     /* disabled the shopping cart from shrinking when the screen is smaller*/
     flex-shrink: 0;
     padding: 2px;
