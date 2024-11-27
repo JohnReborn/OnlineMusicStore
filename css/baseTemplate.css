@@ -6,7 +6,7 @@ body {
     background-color: #392F5A;
 
     /* height of banner */
-    height: 100px;
+    height: 80px;
     /* ensures that the navbar stays at the top when scrolling */
     position: fixed;
     top: 0;
@@ -18,7 +18,7 @@ body {
     display: flex;
     /* puts the links at the end */
     /* justify-content: flex-end; */
-    align-items: end;
+    align-items: center;
 
     /* border-bottom: solid 1px black; */
 
@@ -34,7 +34,7 @@ body {
 
     /* box design */
     background-color: white;
-    padding: 30px;
+    padding: 20px;
     padding-left: 60px;
     padding-right: 60px;
     border: solid 1px black;
@@ -46,21 +46,24 @@ body {
     display: flex;
     flex-direction: row;
     margin-right: 50px;
+    margin-left: 20px;
+    gap: 20px;
 
 }
 
 .links {
     /* design for the boxes */
-    background-color: white;
+    background-color: #fff8f0;
     padding: 5px;
     border: solid 1px black;
     padding-right: 30px;
     border-radius: 5px;
+
 }
 
 /* placeholder for shopping cart symbol */
 #shoppingCart {
-    background-color: white;
+    background-color: #fff8f0;
     height: 30px;
     width: 60px;
     border: solid 1px black;
@@ -72,6 +75,7 @@ body {
     margin: 10px;
     /* disabled the shopping cart from shrinking when the screen is smaller*/
     flex-shrink: 0;
+    padding: 2px;
 
 }
 
