@@ -3,10 +3,10 @@
     /* ensures that the main body content begins where the banner ends */
     /* this is because the top banner overlaps the middle */
     box-sizing: border-box;
-    padding-top: 100px;
+    padding-top: 120px;
     padding-right: 20px;
     padding-left: 20px;
-    background-color: white;
+    /* background-color: white; */
     /* is a wide as the entire page */
     width: 100%;
     /* is atleast 1 viewport tall */
@@ -16,7 +16,7 @@
     /* this ensures makes a flex container for the rows and makes them face downwards */
     display: flex;
     flex-direction: column;
-
+    transition: .3s;
 }
 
 .rowTitle{
@@ -24,6 +24,7 @@
         background-color: white;
         padding: 5px;
         border: solid 1px black;
+        color: black; 
         border-radius: 5px;
         /* is as wide as the content */
         width: max-content;
@@ -64,7 +65,7 @@
 
 /* could be added into middle rows (originally was only on the top two rows) */
 .separatingLine{
-    border-bottom: solid 1px black;
+    border-bottom: solid 1px grey;
 }
 
 /* placeholder for where the images etc. will go */
