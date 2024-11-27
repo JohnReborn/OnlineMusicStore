@@ -3,7 +3,7 @@ body {
 }
 
 #topBanner {
-    background-color: grey;
+    background-color: #392F5A;
 
     /* height of banner */
     height: 100px;
@@ -20,7 +20,7 @@ body {
     /* justify-content: flex-end; */
     align-items: end;
 
-    border-bottom: solid 1px black;
+    /* border-bottom: solid 1px black; */
 
     /* padding-left: 20px; */
     /* padding-right: 50px; */
