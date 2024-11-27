@@ -45,10 +45,11 @@ body {
     wouldnt work in #topBanner as the position is fixed */
     display: flex;
     flex-direction: row;
-    margin-right: 50px;
+    margin-right: 20px;
     margin-left: 20px;
     gap: 10px;
     flex-wrap: wrap;
+    /* flex-shrink: 1; */
 
 }
 
@@ -57,8 +58,9 @@ body {
     background-color: #fff8f0;
     padding: 5px;
     border: solid 1px black;
-    padding-right: 30px;
+    padding-right: 20px;
     border-radius: 5px;
+    /* flex-shrink: 1; */
 
 }
 
