@@ -72,6 +72,13 @@ body {
     margin: 10px;
     /* disabled the shopping cart from shrinking when the screen is smaller*/
     flex-shrink: 0;
+
+}
+
+#shoppingCartImg{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
 }
 
 #bottomBanner {
