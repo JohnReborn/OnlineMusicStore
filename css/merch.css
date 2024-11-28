@@ -46,7 +46,12 @@ footer {
 /* Merchandise Section */
 .merch-section {
     padding: 4rem 2rem;
-    background-color: #f9f9f9;
+    /* added just to stop the header from conflicting */
+    padding-top: 100px;
+
+    /* removing this color allows for the dark mode to work
+       there may be a better way of implementing this though */
+    /* background-color: #f9f9f9; */
 }
 
 .merch-container h1 {

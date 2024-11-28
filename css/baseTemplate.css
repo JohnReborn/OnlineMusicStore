@@ -53,6 +53,10 @@ body {
 
 }
 
+.noDecor{
+    text-decoration: none;
+}
+
 .links {
     /* design for the boxes */
     background-color: #fff8f0;
@@ -62,6 +66,8 @@ body {
     border-radius: 5px;
     /* flex-shrink: 1; */
     cursor: pointer;
+    color: black;
+
 }
 
 #darkModeButton{
