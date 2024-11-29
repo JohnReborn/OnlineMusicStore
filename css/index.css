@@ -30,6 +30,10 @@
         width: max-content;
 }
 
+img{
+    height: 100%;
+}
+
 .middleRows{
     /* margin-top: 20px; */
     display: flex;
@@ -43,6 +47,7 @@
     flex: 1;
     padding: 20px;
     flex-wrap: wrap;
+
 }
 
 /* placeholder for where the images etc. will go */
@@ -70,36 +75,50 @@
 
 /* placeholder for where the images etc. will go */
 .merch{
-    background-color: grey;
-    aspect-ratio: 2;
-    width: 400px;
+    position: relative;
+    display: flex;
+    background-color: white;
+    height: 300px;
+    width: 300px;
     justify-content: center;
     align-self: center;
     flex-shrink: 1;
+    padding: 30px;
+    border-radius: 25px;
 
 }
 
 /* placeholder for where the images etc. will go */
-.vinyls{
-    background-color: grey;
-    aspect-ratio: 2;
-    width: 400px;
+.outerVinyls{
+    /* overflow: hidden; */
+    height: 300px;
+    width: 300px;
+    padding: 30px;
+    position: relative;
+    display: flex;
+    background-color: white;
     justify-content: center;
     align-self: center;
     flex-shrink: 1;
+    border-radius: 25px;
+}
+
+.vinyls{
+    display: flex;
+    align-self: center;
+    /* background-color: white; */
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    overflow: hidden;
 
 }
 
-/* .footer-container{
-    border-top: solid 1px rgba(51, 50, 50, 0.534);
-    background-color:  rgb(245, 245, 245);
-}
+.rowItemOverlay{
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(20, 20, 22, 0.63);
+    color: lightgrey;
 
-.footer{
-    background-color:  rgb(245, 245, 245);
+    font: bold;
 }
-
-.footer-heading{
-    font-family: 'Arial Narrow', Arial, sans-serif;
-    color: rgb(72, 72, 72);
-} */
