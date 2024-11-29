@@ -112,7 +112,7 @@ h3 {
 }
 
 /* Footer Styles */
-.footer-container {
+/* .footer-container {
     background-color: #392F5A;
     padding-bottom: 2rem 0 4rem 0;
 }
@@ -152,10 +152,10 @@ h3 {
 .footer-heading a:hover {
     color: #ff8811;
     transition: 0.3s ease-out;
-}
+} */
 
 /* Footer Email Signup */
-.footer-emailform h2 {
+/* .footer-emailform h2 {
     font-size: 1.5rem;
     margin-bottom: 2rem;
     color: #fff;
@@ -189,10 +189,10 @@ h3 {
     cursor: pointer;
     background-color: #9dd9d2;
     transition: all 0.4s ease-out;
-}
+} */
 
 /* Responsive Styles */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
 
 
     .genre-list {
@@ -223,4 +223,4 @@ h3 {
     .footer-emailform button {
         width: 50%;
     }
-}
+} */
