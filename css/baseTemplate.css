@@ -16,7 +16,7 @@ body {
     background-color: #392F5A;
 
     /* height of banner */
-    height: 80px;
+    height: 100px;
     /* ensures that the navbar stays at the top when scrolling */
     position: fixed;
     top: 0;
@@ -91,7 +91,7 @@ body {
 
 .darkMode{
     background-color: rgb(41, 40, 40);
-    color: white;
+    color: #FFF8F0;
 }
 
 .darkModeButtonLightened{
