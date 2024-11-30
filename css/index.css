@@ -1,4 +1,8 @@
 
+body{
+    color: #392F5A;
+}
+
 #middle{
     /* ensures that the main body content begins where the banner ends */
     /* this is because the top banner overlaps the middle */
@@ -21,13 +25,17 @@
 
 .rowTitle{
         /* design for the boxes */
-        background-color: white;
+        /* background-color: white;
         padding: 5px;
-        border: solid 1px black;
-        color: black; 
+        border: solid 1px black; */
+        /* color: #392F5A;  */
         border-radius: 5px;
         /* is as wide as the content */
         width: max-content;
+        align-self: center;
+        font: bolder;
+        font-weight: 700;
+        font-size: 30px;
 }
 
 img{
@@ -75,38 +83,37 @@ img{
 
 /* placeholder for where the images etc. will go */
 .merch{
-    position: relative;
     display: flex;
-    background-color: white;
-    height: 300px;
-    width: 300px;
+    height: 100%;
+    width: 100%;
     justify-content: center;
     align-self: center;
-    flex-shrink: 1;
-    padding: 30px;
-    border-radius: 25px;
+
+    overflow: hidden;
 
 }
 
 /* placeholder for where the images etc. will go */
-.outerVinyls{
+.outerRowItems{
     /* overflow: hidden; */
     height: 300px;
     width: 300px;
     padding: 30px;
     position: relative;
     display: flex;
+    flex-direction: column;
     background-color: white;
-    justify-content: center;
-    align-self: center;
-    flex-shrink: 1;
+    /* justify-content: center; */
+    /* align-self: center; */
+    /* flex-shrink: 1; */
     border-radius: 25px;
+    /* box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.1); */
+    overflow: hidden;
 }
 
 .vinyls{
     display: flex;
     align-self: center;
-    /* background-color: white; */
     height: 100%;
     width: 100%;
     justify-content: center;
@@ -115,10 +122,17 @@ img{
 }
 
 .rowItemOverlay{
+    align-self: center;
     position: absolute;
     bottom: 0;
     background-color: rgba(20, 20, 22, 0.63);
     color: lightgrey;
 
     font: bold;
+    font-size: larger;
+    width: 100%;
+    text-align: center;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    overflow: hidden;
 }
