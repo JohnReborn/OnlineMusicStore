@@ -5,11 +5,40 @@
     <meta name="viewport" content="initial-scale=1.0,width=device-width" />
     <title>Shopping Cart</title>
     <!--css link-->
+    <link rel="stylesheet" href="css/baseTemplate.css">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/cart.css">
 </head>
 
 <body>
+
+    <!--div container for entire banner-->
+    <div id="topBanner">
+        <!-- placeholder for the logo-->
+        <div id="logo"><img id="vinylLogo" src="images/file.png"></div>
+        <!-- div container for the links (did this to be able to have an indent off the right of the screen (banner is in fixed position))-->
+        <div id="linksBox">
+            <a class="noDecor" href="index.html">
+                <div class="links">Home</div>
+            </a>
+            <a class="noDecor" href="merch.html">
+                <div class="links">Merch</div>
+            </a>
+            <a class="noDecor" href="viynl.html">
+                <div class="links">Vinyls</div>
+            </a>
+            <a class="noDecor" href="login.html">
+                <div class="links">Login</div>
+            </a>
+            <div id="darkModeButton" class="darkModeButtonLightened"></div>
+            <!-- just a placeholder for the shopping cart image-->
+            <a href="cart.html">
+                <div id="shoppingCart"><img id="shoppingCartImg" src="images/shopping-cart.jpg"
+                        alt="shopping cart icon"></div>
+            </a>
+        </div>
+
+    </div>
 
     <div class="container">
         <h1> Shopping Cart</h1>
@@ -66,10 +95,24 @@
                 <hr>
                 <p><span>Total</span> <span>$135</span></p>
                 <hr>
-
+                <a href="#"><i class="fa fa-shopping"></i>Checkout</a>
             </div>
         </div>
 
+    </div>
+
+    <div class="footer-heading f-3">
+        <h2> Social Media</h2>
+        <a href="www.instagram.com">Instagram</a>
+        <a href="www.facebook.com">Facebook</a>
+        <a href="wwww.youtube.com">Youtube</a>
+        <a href="www.x.com">X</a>
+
+        <div class="footer-emailform">
+            <h2> Join our newsletter</h2>
+            <input type="email" placeholder="Enter your email address" id="footer-email">
+            <input type="submit" value="Sign up" id="footer-emailbtn">
+        </div>
     </div>
 
 </body>
