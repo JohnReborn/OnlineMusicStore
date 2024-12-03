@@ -5,72 +5,145 @@
     <meta name="viewport" content="initial-scale=1.0,width=device-width" />
     <title>Shopping Cart</title>
     <!--css link-->
+    <link rel="stylesheet" href="css/baseTemplate.css">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/cart.css">
 </head>
 
 <body>
 
+    <!--div container for entire banner-->
+    <div id="topBanner">
+        <!-- placeholder for the logo-->
+        <div id="logo"><img id="vinylLogo" src="images/file.png"></div>
+        <!-- div container for the links (did this to be able to have an indent off the right of the screen (banner is in fixed position))-->
+        <div id="linksBox">
+            <a class="noDecor" href="index.html">
+                <div class="links">Home</div>
+            </a>
+            <a class="noDecor" href="merch.html">
+                <div class="links">Merch</div>
+            </a>
+            <a class="noDecor" href="viynl.html">
+                <div class="links">Vinyls</div>
+            </a>
+            <a class="noDecor" href="login.html">
+                <div class="links">Login</div>
+            </a>
+            <div id="darkModeButton" class="darkModeButtonLightened"></div>
+            <!-- just a placeholder for the shopping cart image-->
+            <a href="cart.html">
+                <div id="shoppingCart"><img id="shoppingCartImg" src="images/shopping-cart.jpg"
+                        alt="shopping cart icon"></div>
+            </a>
+        </div>
+
+    </div>
+
     <div class="container">
-        <h1> Shopping Cart</h1>
+        <h1>Shopping Cart</h1>
         <div class="project">
-            <div class="shopping">
-                <div class="box">
-                    <img src="images/pglang.jpg" alt=" ">
+            <div class="shop">
+                <div class="box" id="item1" data-price="29.00">
+                    <img src="images/pglang.jpg" alt="PgLang Tank Top">
                     <div class="content">
-                        <h3> PgLang Tank Top</h3>
-                        <h4> Price: $29.00</h4>
-                        <p class="qauntity">Quantity: <input value="2"></p>
-                        <p class="btn">
-                            <i class="fa fa-trash"></i>
-                            <span class="btn2">Remove</span>
-                        </p>
-
-                    </div>
-                </div>
-
-                <div class="box">
-                    <img src="images/gnx.jpg" alt=" ">
-                    <div class="content">
-                        <h3> GNX </h3>
-                        <h4> Price: $37.00</h4>
-                        <p class="qauntity">Quantity: <input value="1"></p>
-                        <p class="btn">
-                            <i class="fa fa-trash"></i>
-                            <span class="btn2">Remove</span>
+                        <h3>PgLang Tank Top</h3>
+                        <h4>Price: $<span class="item-price">29.00</span></h4>
+                        <p class="quantity">Quantity: <input class="quantity-input" value="2"
+                                oninput="updatePrice('item1')"></p>
+                        <p class="btn-area">
+                            <button class="remove-btn" onclick="removeItem('item1')">
+                                <i class="fa fa-trash"></i> Remove
+                            </button>
                         </p>
                     </div>
                 </div>
 
-                <div class="box">
-                    <img src="images/tylerposter.jpg" alt=" ">
+                <div class="box" id="item2" data-price="37.00">
+                    <img src="images/gnx.jpg" alt="GNX">
                     <div class="content">
-                        <h3> Chromakopia Poster </h3>
-                        <h4> Price: $15.00</h4>
-                        <p class="qauntity">Quantity: <input value="2"></p>
-                        <p class="btn">
-                            <i class="fa fa-trash"></i>
-                            <span class="btn2">Remove</span>
+                        <h3>GNX</h3>
+                        <h4>Price: $<span class="item-price">37.00</span></h4>
+                        <p class="quantity">Quantity: <input class="quantity-input" value="1"
+                                oninput="updatePrice('item2')"></p>
+                        <p class="btn-area">
+                            <button class="remove-btn" onclick="removeItem('item2')">
+                                <i class="fa fa-trash"></i> Remove
+                            </button>
                         </p>
+                    </div>
+                </div>
 
+                <div class="box" id="item3" data-price="15.00">
+                    <img src="images/tylerposter.jpg" alt="Chromakopia Poster">
+                    <div class="content">
+                        <h3>Chromakopia Poster</h3>
+                        <h4>Price: $<span class="item-price">15.00</span></h4>
+                        <p class="quantity">Quantity: <input class="quantity-input" value="2"
+                                oninput="updatePrice('item3')"></p>
+                        <p class="btn-area">
+                            <button class="remove-btn" onclick="removeItem('item3')">
+                                <i class="fa fa-trash"></i> Remove
+                            </button>
+                        </p>
                     </div>
                 </div>
             </div>
 
             <div class="right-bar">
-                <p><span>Subtotal</span> <span>$120</span></p>
+                <p><span>Subtotal</span> <span id="subtotal">$81.00</span></p>
                 <hr>
-                <p><span>Tax (5%)</span> <span>$5</span></p>
+                <p><span>Tax (5%)</span> <span id="tax">$5.00</span></p>
                 <hr>
-                <p><span>Shipping</span> <span>$10</span></p>
+                <p><span>Shipping</span> <span id="shipping">$10.00</span></p>
                 <hr>
-                <p><span>Total</span> <span>$135</span></p>
+                <p><span>Total</span> <span id="total">$135.00</span></p>
                 <hr>
-
+                <button class="checkout-btn">
+                    <i class="fa fa-shopping"></i> Checkout
+                </button>
             </div>
         </div>
-
     </div>
+
+
+    <div class="footer-container">
+        <div class="footer">
+            <div class="footer-heading f-1">
+                <h2>Links</h2>
+                <a href="index.html">Home</a>
+                <a href="merchC.html">Clothes</a>
+                <a href="merchV.html">Vinyls</a>
+                <a href="about.html">About us</a>
+                <a href="contact.html">Contact us</a>
+            </div>
+
+            <div class="footer-heading f-2">
+                <h2>Contact US</h2>
+                <a href="#">Jobs</a>
+                <a href="#">Support</a>
+                <a href="#">Contact</a>
+                <a href="#">Sponsorships</a>
+
+            </div>
+
+            <div class="footer-heading f-3">
+                <h2> Social Media</h2>
+                <a href="www.instagram.com">Instagram</a>
+                <a href="www.facebook.com">Facebook</a>
+                <a href="wwww.youtube.com">Youtube</a>
+                <a href="www.x.com">X</a>
+
+                <div class="footer-emailform">
+                    <h2> Join our newsletter</h2>
+                    <input type="email" placeholder="Enter your email address" id="footer-email">
+                    <input type="submit" value="Sign up" id="footer-emailbtn">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/darkmode.js"></script>
+    <script src="js/cart.js"></script>
 
 </body>
 
