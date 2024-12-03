@@ -108,7 +108,8 @@ img{
     /* flex-shrink: 1; */
     border-radius: 25px;
     /* box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.1); */
-    overflow: hidden;
+    /* overflow: hidden; */
+    align-self: center;
 }
 
 .vinyls{
@@ -135,4 +136,17 @@ img{
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     overflow: hidden;
+}
+
+@media (max-width: 378px){
+    .middleRows{
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 506px){
+    #middle{
+        padding-top: 140px;
+    }
 }
