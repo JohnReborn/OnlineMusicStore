@@ -79,18 +79,21 @@ body {
 
 .noDecor{
     text-decoration: none;
+    display: flex;
 }
 
 .links {
     /* design for the boxes */
-    background-color: #fff8f0;
-    padding: 5px;
-    border: solid 1px black;
-    padding-right: 20px;
+    /* background-color: #fff8f0; */
+    padding: 6px;
+    /* border: solid 1px black; */
+    padding-right: 12px;
+    padding-left: 12px;
     border-radius: 5px;
     /* flex-shrink: 1; */
     cursor: pointer;
-    color: black;
+    color: #fff8f0;
+    font-weight: bold;
 }
 
 #darkModeButton{
@@ -125,7 +128,7 @@ body {
     /* makes it round */
     border-radius: 50%;
     /* aligns it to the top */
-    align-self: flex-start;
+    align-self: center;
     /* gives space around itself */
     /* margin: 10px; */
     /* disabled the shopping cart from shrinking when the screen is smaller*/
