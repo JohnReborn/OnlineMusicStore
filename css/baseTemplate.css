@@ -16,7 +16,7 @@ body {
     background-color: #392F5A;
 
     /* height of banner */
-    height: 100px;
+    height: auto;
     /* ensures that the navbar stays at the top when scrolling */
     position: fixed;
     top: 0;
@@ -29,7 +29,7 @@ body {
     /* puts the links at the end */
     /* justify-content: flex-end; */
     align-items: center;
-
+    padding: 5px;
     /* border-bottom: solid 1px black; */
 
     /* padding-left: 20px; */
@@ -53,7 +53,7 @@ body {
 
 #vinylLogo{
     object-fit: contain;
-    height: 200px;
+    height: auto;
     width: 200px;
 }
 
