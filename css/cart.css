@@ -12,7 +12,6 @@ body {
 .container {
     max-width: 1000px;
     margin: 0 auto;
-
 }
 
 .container h1 {
@@ -62,24 +61,27 @@ body {
 
 .content h4 {
     margin-bottom: 50px;
-
 }
 
 .btn-area {
     position: absolute;
     bottom: 20px;
     right: 20px;
-    padding: 10px 25px;
-    background-color: #555;
-    color: #fff;
-    cursor: pointer;
-    border-radius: 10px;
-    font-weight: 600;
-
 }
 
-.btn-area:hover {
-    background-color: #9dd9d2;
+.remove-btn {
+    background-color: #ff4d4d;
+    /* Red for Remove */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.remove-btn:hover {
+    background-color: #ff1a1a;
 }
 
 .unit input {
@@ -113,7 +115,7 @@ body {
     font-size: 20px;
 }
 
-.right-bar a {
+.right-bar button {
     background-color: #76bfb6;
     color: #fff;
     text-decoration: none;
@@ -122,16 +124,20 @@ body {
     height: 40px;
     line-height: 40px;
     font-weight: 900;
+    width: 100%;
+    margin-top: 20px;
+    /* Ensures spacing between total and button */
+    border: none;
+    cursor: pointer;
 }
 
-right-bar i {
-    margin-right: 15px;
-}
-
-.right-bar a:hover {
+.right-bar button:hover {
     background-color: #9dd9d2;
 }
 
+.right-bar i {
+    margin-right: 15px;
+}
 
 @media screen and (max-width: 700px) {
     .content h3 {
@@ -142,8 +148,10 @@ right-bar i {
         margin-bottom: 20px;
     }
 
-    .btn2 {
-        display: none;
+    .btn-area {
+        bottom: 10px;
+        /* Adjust button position */
+        right: 10px;
     }
 
     .box {
@@ -167,9 +175,8 @@ right-bar i {
     }
 }
 
-@media screen and(max-width: 1250px) {
+@media screen and (max-width: 1250px) {
     .container {
         max-width: 95%;
     }
-
 }
