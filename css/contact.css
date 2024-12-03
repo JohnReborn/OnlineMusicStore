@@ -1,0 +1,150 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #FFF8F0; /* Floral White */
+    color: #392F5A; /* Space Cadet */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and Footer */
+header, footer {
+    background: #392F5A; /* Space Cadet */
+    color: #FFF8F0; /* Floral White */
+    text-align: center;
+    padding: 20px;
+}
+
+header img {
+    height: 50px;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+header nav a {
+    color: #FFF8F0; /* Floral White */
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: #F4D06F; /* Jasmine */
+}
+
+footer {
+    background: #392F5A;
+    color: #FFF8F0; /* Floral White */
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Main Sections */
+main {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: #9DD9D2; /* Tiffany Blue */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: #392F5A; /* Space Cadet */
+}
+
+/* Section Titles */
+main h2 {
+    text-align: center;
+    color: #F4D06F; /* Jasmine */
+    margin-bottom: 20px;
+}
+
+main p {
+    text-align: center;
+    font-size: 16px;
+    color: #392F5A; /* Space Cadet */
+}
+
+/* Form Elements (Shared) */
+.form-label {
+    color: #392F5A; /* Space Cadet */
+    font-weight: bold;
+}
+
+.form-control, .form-select {
+    background: #FFF8F0; /* Floral White */
+    border: 2px solid #F4D06F; /* Jasmine */
+    color: #392F5A; /* Space Cadet */
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #FF8811; /* UT Orange */
+    box-shadow: 0 0 5px #FF8811;
+}
+
+textarea {
+    resize: none; /* Prevent resizing */
+}
+
+/* Buttons (Shared) */
+button {
+    background: #FF8811; /* UT Orange */
+    color: #FFF8F0; /* Floral White */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background: #F4D06F; /* Jasmine */
+}
+
+/* Links (Shared) */
+a {
+    color: #FF8811; /* UT Orange */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Login Page Specific */
+.login-card {
+    background: #9DD9D2; /* Tiffany Blue */
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-tabs .nav-link {
+    background: transparent;
+    color: #392F5A; /* Space Cadet */
+    font-weight: bold;
+    border: none;
+}
+
+.nav-tabs .nav-link.active {
+    color: #FF8811; /* UT Orange */
+    border-bottom: 2px solid #FF8811; /* UT Orange */
+}
+
+.forgot-link {
+    color: #FF8811; /* UT Orange */
+}
+
+.forgot-link:hover {
+    text-decoration: underline;
+}

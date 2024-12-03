@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Music Store - Contact Us</title>
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- Link to Custom CSS -->
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <img src="images/logo.png" alt="Online Music Store Logo">
+        <h1>Online Music Store</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="vinyls.html">Vinyls</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <h2>Contact Us</h2>
+        <p>Have questions or feedback? We'd love to hear from you! Fill out the form below and we'll get back to you as soon as possible.</p>
+        <form onsubmit="return validateEmail()">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Full Name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Your Email Address" required>
+            </div>
+            <div class="mb-3">
+                <label for="query-type" class="form-label">Query Type</label>
+                <select id="query-type" class="form-select">
+                    <option value="order">Order Issue</option>
+                    <option value="merchandise">Merchandise Query</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Write your message here..." required></textarea>
+            </div>
+            <div id="error-message" style="color: red; font-size: 0.9em;"></div>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Online Music Store. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Email Validation -->
+    <script>
+        function validateEmail() {
+            var email = document.getElementById("email").value;
+            var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            var errorMessage = document.getElementById("error-message");
+
+            if (!emailPattern.test(email)) {
+                errorMessage.textContent = "Please enter a valid email address.";
+                return false;
+            }
+
+            errorMessage.textContent = ""; // Clear error if valid
+            return true;
+        }
+    </script>
+</body>
+</html>
