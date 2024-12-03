@@ -39,9 +39,10 @@ body {
 
 #logo {
     /* these two put the logo to the left side */
+    display: flex;
     margin-left: 20px;
     margin-right: auto;
-
+    justify-content: center;
     /* box design */
     /* background-color: white;
     padding: 20px;
