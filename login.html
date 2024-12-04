@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="/css/contact.css">
-    <link rel="stylesheet" href="css/baseTemplate.css">
-
+    <link rel="stylesheet" href="contact.css">
     <style>
+        /* General Styles */
         body {
-            background-color: #FFF8F0;
-            /* Floral White */
+            background-color: #FFF8F0; /* Floral White */
             font-family: Arial, sans-serif;
             margin: 0;
             display: flex;
@@ -19,9 +16,9 @@
             min-height: 100vh;
         }
 
+        /* Header Styles */
         header {
-            background-color: #392F5A;
-            /* Space Cadet */
+            background-color: #392F5A; /* Space Cadet */
             color: white;
             display: flex;
             justify-content: space-between;
@@ -33,14 +30,14 @@
             z-index: 1000;
         }
 
-        header #logo {
-            font-size: 18px;
-            font-weight: bold;
+        header #logo img {
+            height: 50px;
         }
 
         header nav {
             display: flex;
-            gap: 15px;
+            align-items: center;
+            gap: 20px;
         }
 
         header nav a {
@@ -53,6 +50,24 @@
             text-decoration: underline;
         }
 
+        #darkModeButton {
+            height: 20px;
+            width: 20px;
+            background-color: yellow;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        #cart img {
+            height: 30px;
+            width: 30px;
+            border: 1px solid white;
+            border-radius: 50%;
+            padding: 5px;
+            background-color: white;
+        }
+
+        /* Login Form Styles */
         .login-container {
             background-color: white;
             padding: 30px;
@@ -80,56 +95,31 @@
         }
 
         .tab.active {
-            color: #392F5A;
-            /* Space Cadet */
+            color: #392F5A; /* Space Cadet */
             border-bottom: 2px solid #392F5A;
         }
 
         form {
             display: flex;
             flex-direction: column;
+            gap: 15px;
         }
 
-        label {
+        form label {
             margin-bottom: 5px;
             font-weight: bold;
-            color: #392F5A;
-            /* Space Cadet */
+            color: #392F5A; /* Space Cadet */
         }
 
-        input[type="email"],
-        input[type="password"] {
+        form input[type="email"], form input[type="password"] {
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 4px;
-            margin-bottom: 15px;
             width: 100%;
         }
 
-        .error {
-            color: red;
-            font-size: 12px;
-            display: none;
-        }
-
-        .forgot-password {
-            text-align: right;
-            margin-bottom: 15px;
-        }
-
-        .forgot-password a {
-            color: #392F5A;
-            text-decoration: none;
-            font-size: 14px;
-        }
-
-        .forgot-password a:hover {
-            text-decoration: underline;
-        }
-
-        button {
-            background-color: #9DD9D2;
-            /* Tiffany Blue */
+        form button {
+            background-color: #9DD9D2; /* Tiffany Blue */
             color: white;
             border: none;
             padding: 10px;
@@ -139,67 +129,86 @@
             transition: background-color 0.3s;
         }
 
-        button:hover {
-            background-color: #FF8811;
-            /* UT Orange */
+        form button:hover {
+            background-color: #FF8811; /* UT Orange */
         }
 
-        footer {
+        /* Footer Styles */
+        .footer-container {
             background-color: #392F5A;
-            /* Space Cadet */
             color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: auto;
+            padding: 30px 20px;
         }
 
-        footer a {
-            color: #FF8811;
-            /* UT Orange */
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .footer-heading {
+            flex: 1;
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+
+        .footer-heading h2 {
+            margin-bottom: 15px;
+            color: white;
+        }
+
+        .footer-heading a {
+            color: white;
             text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
         }
 
-        footer a:hover {
+        .footer-heading a:hover {
             text-decoration: underline;
+        }
+
+        .footer-emailform {
+            margin-top: 15px;
+        }
+
+        .footer-emailform input[type="email"] {
+            padding: 10px;
+            margin-right: 10px;
+            border-radius: 4px;
+            border: none;
+        }
+
+        .footer-emailform input[type="submit"] {
+            background-color: #FF8811;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .footer-emailform input[type="submit"]:hover {
+            background-color: #9DD9D2;
         }
     </style>
 </head>
-
 <body>
-    <!--div container for entire banner-->
-    <div id="topBanner">
-        <!-- placeholder for the logo-->
-        <a href="index.html" class="logo">
-            <img id="vinylLogo" src="images/file.png">
-        </a>
-        <!-- div container for the links (did this to be able to have an indent off the right of the screen (banner is in fixed position))-->
-        <div class="linksBox upperLinksBox">
-            <div class="linksBox">
-                <a class="noDecor" href="index.html">
-                    <div class="links">Home</div>
-                </a>
-                <a class="noDecor" href="merch.html">
-                    <div class="links">Merch</div>
-                </a>
-            </div>
-            <div class="linksBox">
-                <a class="noDecor" href="viynl.html">
-                    <div class="links">Vinyls</div>
-                </a>
-                <a class="noDecor" href="login.html">
-                    <div class="links">Login</div>
-                </a>
-            </div>
-            <div class="linksBox">
-                <div id="darkModeButton" class="darkModeButtonLightened"></div>
-                <!-- just a placeholder for the shopping cart image-->
-                <a class="noDecor" href="cart.html">
-                    <div id="shoppingCart"><img id="shoppingCartImg" src="images/shopping-cart.jpg"
-                            alt="shopping cart icon"></div>
-                </a>
-            </div>
+    <header>
+        <div id="logo">
+            <img src="images/logo.png" alt="Logo">
         </div>
-    </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="merch.html">Merch</a>
+            <a href="vinyls.html">Vinyls</a>
+            <a href="login.html">Login</a>
+            <div id="darkModeButton"></div>
+            <a href="cart.html" id="cart">
+                <img src="images/cart.png" alt="Cart">
+            </a>
+        </nav>
+    </header>
 
     <div class="login-container">
         <div class="tab-container">
@@ -207,84 +216,49 @@
             <div class="tab" id="registerTab">Register</div>
         </div>
         <form id="loginForm">
-            <label for="email">Email Address <span style="color: red;">*</span></label>
+            <label for="email">Email Address</label>
             <input type="email" id="email" name="email" required>
-            <p class="error" id="emailError">Please enter a valid email address (e.g., @gmail.com, @outlook.com).</p>
 
-            <label for="password">Password <span style="color: red;">*</span></label>
+            <label for="password">Password</label>
             <input type="password" id="password" name="password" required>
-
-            <div class="forgot-password">
-                <a href="#">Forgot your password</a>
-            </div>
 
             <button type="submit">Sign In</button>
         </form>
     </div>
+
     <div class="footer-container">
         <div class="footer">
             <div class="footer-heading f-1">
                 <h2>Links</h2>
                 <a href="index.html">Home</a>
-                <a href="merchC.html">Clothes</a>
-                <a href="merchV.html">Vinyls</a>
-                <a href="about.html">About us</a>
-                <a href="contact.html">Contact us</a>
+                <a href="merch.html">Merch</a>
+                <a href="vinyls.html">Vinyls</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
             </div>
 
             <div class="footer-heading f-2">
-                <h2>Contact US</h2>
+                <h2>Contact Us</h2>
                 <a href="#">Jobs</a>
                 <a href="#">Support</a>
                 <a href="#">Contact</a>
                 <a href="#">Sponsorships</a>
-
             </div>
 
             <div class="footer-heading f-3">
-                <h2> Social Media</h2>
-                <a href="www.instagram.com">Instagram</a>
-                <a href="www.facebook.com">Facebook</a>
-                <a href="wwww.youtube.com">Youtube</a>
-                <a href="www.x.com">X</a>
+                <h2>Social Media</h2>
+                <a href="https://www.instagram.com">Instagram</a>
+                <a href="https://www.facebook.com">Facebook</a>
+                <a href="https://www.youtube.com">YouTube</a>
+                <a href="https://www.x.com">X</a>
 
                 <div class="footer-emailform">
-                    <h2> Join our newsletter</h2>
-                    <input type="email" placeholder="Enter your email address" id="footer-email">
-                    <input type="submit" value="Sign up" id="footer-emailbtn">
+                    <h2>Join our newsletter</h2>
+                    <input type="email" placeholder="Enter your email address">
+                    <input type="submit" value="Sign up">
                 </div>
             </div>
         </div>
     </div>
-    <script src="js/darkmode.js"></script>
-    <script>
-        document.getElementById('loginForm').addEventListener('submit', function (event) {
-            const email = document.getElementById('email').value;
-            const emailError = document.getElementById('emailError');
-            const validDomains = ['gmail.com', 'outlook.com', 'yahoo.com'];
-            const emailDomain = email.split('@')[1];
-
-            if (!validDomains.includes(emailDomain)) {
-                event.preventDefault();
-                emailError.style.display = 'block';
-            } else {
-                emailError.style.display = 'none';
-            }
-        });
-
-        const signInTab = document.getElementById('signInTab');
-        const registerTab = document.getElementById('registerTab');
-
-        signInTab.addEventListener('click', () => {
-            signInTab.classList.add('active');
-            registerTab.classList.remove('active');
-        });
-
-        registerTab.addEventListener('click', () => {
-            registerTab.classList.add('active');
-            signInTab.classList.remove('active');
-        });
-    </script>
 </body>
-
 </html>
