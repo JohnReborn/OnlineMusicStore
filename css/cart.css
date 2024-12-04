@@ -34,7 +34,7 @@ body {
     height: 200px;
     overflow: hidden;
     margin-bottom: 20px;
-    /* background: #fff; */
+    background: #fff;
     transition: all .6s ease;
     box-shadow: rgba(100, 100, 111, 0.2);
 }
