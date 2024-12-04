@@ -221,38 +221,68 @@
             <button type="submit">Sign In</button>
         </form>
     </div>
+    <div class="footer-container">
+        <div class="footer">
+            <div class="footer-heading f-1">
+                <h2>Links</h2>
+                <a href="index.html">Home</a>
+                <a href="merchC.html">Clothes</a>
+                <a href="merchV.html">Vinyls</a>
+                <a href="about.html">About us</a>
+                <a href="contact.html">Contact us</a>
+            </div>
 
-    <footer>
-        <p>© 2024 Company Name | <a href="#">Privacy Policy</a></p>
-    </footer>
+            <div class="footer-heading f-2">
+                <h2>Contact US</h2>
+                <a href="#">Jobs</a>
+                <a href="#">Support</a>
+                <a href="#">Contact</a>
+                <a href="#">Sponsorships</a>
 
-    <script>
-        document.getElementById('loginForm').addEventListener('submit', function (event) {
-            const email = document.getElementById('email').value;
-            const emailError = document.getElementById('emailError');
-            const validDomains = ['gmail.com', 'outlook.com', 'yahoo.com'];
-            const emailDomain = email.split('@')[1];
+            </div>
 
-            if (!validDomains.includes(emailDomain)) {
-                event.preventDefault();
-                emailError.style.display = 'block';
-            } else {
-                emailError.style.display = 'none';
-            }
-        });
+            <div class="footer-heading f-3">
+                <h2> Social Media</h2>
+                <a href="www.instagram.com">Instagram</a>
+                <a href="www.facebook.com">Facebook</a>
+                <a href="wwww.youtube.com">Youtube</a>
+                <a href="www.x.com">X</a>
 
-        const signInTab = document.getElementById('signInTab');
-        const registerTab = document.getElementById('registerTab');
+                <div class="footer-emailform">
+                    <h2> Join our newsletter</h2>
+                    <input type="email" placeholder="Enter your email address" id="footer-email">
+                    <input type="submit" value="Sign up" id="footer-emailbtn">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/darkmode.js"></script>
+    document.getElementById('loginForm').addEventListener('submit', function (event) {
+    const email = document.getElementById('email').value;
+    const emailError = document.getElementById('emailError');
+    const validDomains = ['gmail.com', 'outlook.com', 'yahoo.com'];
+    const emailDomain = email.split('@')[1];
 
-        signInTab.addEventListener('click', () => {
-            signInTab.classList.add('active');
-            registerTab.classList.remove('active');
-        });
+    if (!validDomains.includes(emailDomain)) {
+    event.preventDefault();
+    emailError.style.display = 'block';
+    } else {
+    emailError.style.display = 'none';
+    }
+    });
 
-        registerTab.addEventListener('click', () => {
-            registerTab.classList.add('active');
-            signInTab.classList.remove('active');
-        });
+    const signInTab = document.getElementById('signInTab');
+    const registerTab = document.getElementById('registerTab');
+
+    signInTab.addEventListener('click', () => {
+    signInTab.classList.add('active');
+    registerTab.classList.remove('active');
+    });
+
+    registerTab.addEventListener('click', () => {
+    registerTab.classList.add('active');
+    signInTab.classList.remove('active');
+    });
     </script>
 </body>
 
