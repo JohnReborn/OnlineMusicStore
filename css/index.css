@@ -7,7 +7,7 @@ body{
     /* ensures that the main body content begins where the banner ends */
     /* this is because the top banner overlaps the middle */
     box-sizing: border-box;
-    padding-top: 120px;
+    /* padding-top: 120px; */
     padding-right: 20px;
     padding-left: 20px;
     /* background-color: white; */
@@ -21,6 +21,10 @@ body{
     display: flex;
     flex-direction: column;
     transition: .3s;
+}
+
+.middleOriginalPadding{
+    padding-top: 120px;
 }
 
 .rowTitle{
@@ -138,7 +142,7 @@ img{
     overflow: hidden;
 }
 
-@media (max-width: 378px){
+/* @media (max-width: 378px){
     .middleRows{
         justify-content: center;
     }
@@ -149,4 +153,4 @@ img{
     #middle{
         padding-top: 140px;
     }
-}
+} */
