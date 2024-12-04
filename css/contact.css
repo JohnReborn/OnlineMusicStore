@@ -7,44 +7,101 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #FFF8F0; /* Floral White */
+    background-color: #FFF8F0;
+    /* Floral White */
     color: #333;
     line-height: 1.6;
 }
 
-/* Header Styles */
-#topBanner {
-    background-color: #392F5A; /* Space Cadet */
-    padding: 10px 20px;
+.login-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 120px;
+}
+
+.tab-container {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ccc;
 }
 
-#logo img {
-    height: 50px;
-}
-
-#linksBox {
-    display: flex;
-    gap: 15px;
-}
-
-.links {
-    color: white;
-    text-decoration: none;
+.tab {
+    width: 50%;
+    text-align: center;
+    padding: 10px 0;
     font-weight: bold;
-    padding: 5px 10px;
-    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tab.active {
+    color: #392F5A;
+    /* Space Cadet */
+    border-bottom: 2px solid #392F5A;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #392F5A;
+    /* Space Cadet */
+}
+
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+
+.forgot-password {
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+.forgot-password a {
+    color: #392F5A;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: #9DD9D2;
+    /* Tiffany Blue */
+    color: white;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
     transition: background-color 0.3s;
 }
 
-.links:hover {
-    background-color: #FF8811; /* UT Orange */
+button:hover {
+    background-color: #FF8811;
+    /* UT Orange */
 }
 
 /* Form Container */
@@ -69,7 +126,8 @@ form textarea {
 }
 
 form button {
-    background-color: #9DD9D2; /* Tiffany Blue */
+    background-color: #9DD9D2;
+    /* Tiffany Blue */
     color: white;
     border: none;
     padding: 10px;
@@ -80,12 +138,14 @@ form button {
 }
 
 form button:hover {
-    background-color: #FF8811; /* UT Orange */
+    background-color: #FF8811;
+    /* UT Orange */
 }
 
 /* Contact/Login Form Section */
 section {
-    background-color: #F4D06F; /* Jasmine */
+    background-color: #F4D06F;
+    /* Jasmine */
     padding: 20px;
     width: 90%;
     max-width: 400px;
@@ -95,14 +155,16 @@ section {
 }
 
 section h2 {
-    color: #392F5A; /* Space Cadet */
+    color: #392F5A;
+    /* Space Cadet */
     text-align: center;
     margin-bottom: 20px;
 }
 
 /* Footer Styles */
 .footer-container {
-    background-color: #392F5A; /* Space Cadet */
+    background-color: #392F5A;
+    /* Space Cadet */
     color: white;
     text-align: center;
     padding: 20px;
@@ -134,4 +196,3 @@ section h2 {
         font-size: 16px;
     }
 }
-

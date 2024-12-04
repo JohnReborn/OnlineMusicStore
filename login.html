@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="css/baseTemplate.css">
+
     <style>
         body {
-            background-color: #FFF8F0; /* Floral White */
+            background-color: #FFF8F0;
+            /* Floral White */
             font-family: Arial, sans-serif;
             margin: 0;
             display: flex;
@@ -16,7 +20,8 @@
         }
 
         header {
-            background-color: #392F5A; /* Space Cadet */
+            background-color: #392F5A;
+            /* Space Cadet */
             color: white;
             display: flex;
             justify-content: space-between;
@@ -75,7 +80,8 @@
         }
 
         .tab.active {
-            color: #392F5A; /* Space Cadet */
+            color: #392F5A;
+            /* Space Cadet */
             border-bottom: 2px solid #392F5A;
         }
 
@@ -87,10 +93,12 @@
         label {
             margin-bottom: 5px;
             font-weight: bold;
-            color: #392F5A; /* Space Cadet */
+            color: #392F5A;
+            /* Space Cadet */
         }
 
-        input[type="email"], input[type="password"] {
+        input[type="email"],
+        input[type="password"] {
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 4px;
@@ -120,7 +128,8 @@
         }
 
         button {
-            background-color: #9DD9D2; /* Tiffany Blue */
+            background-color: #9DD9D2;
+            /* Tiffany Blue */
             color: white;
             border: none;
             padding: 10px;
@@ -131,11 +140,13 @@
         }
 
         button:hover {
-            background-color: #FF8811; /* UT Orange */
+            background-color: #FF8811;
+            /* UT Orange */
         }
 
         footer {
-            background-color: #392F5A; /* Space Cadet */
+            background-color: #392F5A;
+            /* Space Cadet */
             color: white;
             text-align: center;
             padding: 20px;
@@ -143,7 +154,8 @@
         }
 
         footer a {
-            color: #FF8811; /* UT Orange */
+            color: #FF8811;
+            /* UT Orange */
             text-decoration: none;
         }
 
@@ -152,18 +164,42 @@
         }
     </style>
 </head>
+
 <body>
-    <header>
-        <div id="logo">Company Logo</div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="merch.html">Merch</a>
-            <a href="cart.html">Cart</a>
-            <a href="login.html">Login</a>
-            <a href="about.html">About Page</a>
-            <a href="contact.html">Contact Page</a>
-        </nav>
-    </header>
+    <!--div container for entire banner-->
+    <div id="topBanner">
+        <!-- placeholder for the logo-->
+        <a href="index.html" class="logo">
+            <img id="vinylLogo" src="images/file.png">
+        </a>
+        <!-- div container for the links (did this to be able to have an indent off the right of the screen (banner is in fixed position))-->
+        <div class="linksBox upperLinksBox">
+            <div class="linksBox">
+                <a class="noDecor" href="index.html">
+                    <div class="links">Home</div>
+                </a>
+                <a class="noDecor" href="merch.html">
+                    <div class="links">Merch</div>
+                </a>
+            </div>
+            <div class="linksBox">
+                <a class="noDecor" href="viynl.html">
+                    <div class="links">Vinyls</div>
+                </a>
+                <a class="noDecor" href="login.html">
+                    <div class="links">Login</div>
+                </a>
+            </div>
+            <div class="linksBox">
+                <div id="darkModeButton" class="darkModeButtonLightened"></div>
+                <!-- just a placeholder for the shopping cart image-->
+                <a class="noDecor" href="cart.html">
+                    <div id="shoppingCart"><img id="shoppingCartImg" src="images/shopping-cart.jpg"
+                            alt="shopping cart icon"></div>
+                </a>
+            </div>
+        </div>
+    </div>
 
     <div class="login-container">
         <div class="tab-container">
@@ -191,7 +227,7 @@
     </footer>
 
     <script>
-        document.getElementById('loginForm').addEventListener('submit', function(event) {
+        document.getElementById('loginForm').addEventListener('submit', function (event) {
             const email = document.getElementById('email').value;
             const emailError = document.getElementById('emailError');
             const validDomains = ['gmail.com', 'outlook.com', 'yahoo.com'];
@@ -219,4 +255,5 @@
         });
     </script>
 </body>
+
 </html>
