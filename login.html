@@ -257,32 +257,33 @@
         </div>
     </div>
     <script src="js/darkmode.js"></script>
-    document.getElementById('loginForm').addEventListener('submit', function (event) {
-    const email = document.getElementById('email').value;
-    const emailError = document.getElementById('emailError');
-    const validDomains = ['gmail.com', 'outlook.com', 'yahoo.com'];
-    const emailDomain = email.split('@')[1];
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function (event) {
+            const email = document.getElementById('email').value;
+            const emailError = document.getElementById('emailError');
+            const validDomains = ['gmail.com', 'outlook.com', 'yahoo.com'];
+            const emailDomain = email.split('@')[1];
 
-    if (!validDomains.includes(emailDomain)) {
-    event.preventDefault();
-    emailError.style.display = 'block';
-    } else {
-    emailError.style.display = 'none';
-    }
-    });
+            if (!validDomains.includes(emailDomain)) {
+                event.preventDefault();
+                emailError.style.display = 'block';
+            } else {
+                emailError.style.display = 'none';
+            }
+        });
 
-    const signInTab = document.getElementById('signInTab');
-    const registerTab = document.getElementById('registerTab');
+        const signInTab = document.getElementById('signInTab');
+        const registerTab = document.getElementById('registerTab');
 
-    signInTab.addEventListener('click', () => {
-    signInTab.classList.add('active');
-    registerTab.classList.remove('active');
-    });
+        signInTab.addEventListener('click', () => {
+            signInTab.classList.add('active');
+            registerTab.classList.remove('active');
+        });
 
-    registerTab.addEventListener('click', () => {
-    registerTab.classList.add('active');
-    signInTab.classList.remove('active');
-    });
+        registerTab.addEventListener('click', () => {
+            registerTab.classList.add('active');
+            signInTab.classList.remove('active');
+        });
     </script>
 </body>
 
