@@ -6,6 +6,7 @@
     <title>Contact Us</title>
     <link rel="stylesheet" href="contact.css">
     <style>
+        /* General Styles */
         body {
             background-color: #FFF8F0; /* Floral White */
             font-family: Arial, sans-serif;
@@ -15,6 +16,7 @@
             min-height: 100vh;
         }
 
+        /* Header Styles */
         header {
             background-color: #392F5A; /* Space Cadet */
             color: white;
@@ -34,7 +36,8 @@
 
         header nav {
             display: flex;
-            gap: 15px;
+            align-items: center;
+            gap: 20px;
         }
 
         header nav a {
@@ -47,13 +50,31 @@
             text-decoration: underline;
         }
 
+        #darkModeButton {
+            height: 20px;
+            width: 20px;
+            background-color: yellow;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        #cart img {
+            height: 30px;
+            width: 30px;
+            border: 1px solid white;
+            border-radius: 50%;
+            padding: 5px;
+            background-color: white;
+        }
+
+        /* Contact Form Styles */
         .contact-container {
             background-color: white;
             padding: 30px;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             width: 90%;
-            max-width: 400px;
+            max-width: 600px;
             margin: auto;
             margin-top: 120px;
         }
@@ -61,33 +82,26 @@
         form {
             display: flex;
             flex-direction: column;
+            gap: 15px;
         }
 
-        label {
-            margin-bottom: 5px;
+        form label {
             font-weight: bold;
             color: #392F5A; /* Space Cadet */
         }
 
-        input, select, textarea {
+        form input, form select, form textarea {
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 4px;
-            margin-bottom: 15px;
             width: 100%;
         }
 
-        textarea {
+        form textarea {
             resize: none;
         }
 
-        .error {
-            color: red;
-            font-size: 12px;
-            display: none;
-        }
-
-        button {
+        form button {
             background-color: #9DD9D2; /* Tiffany Blue */
             color: white;
             border: none;
@@ -98,52 +112,97 @@
             transition: background-color 0.3s;
         }
 
-        button:hover {
+        form button:hover {
             background-color: #FF8811; /* UT Orange */
         }
 
-        footer {
-            background-color: #392F5A; /* Space Cadet */
+        /* Footer Styles */
+        .footer-container {
+            background-color: #392F5A;
             color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: auto;
+            padding: 30px 20px;
         }
 
-        footer a {
-            color: #FF8811; /* UT Orange */
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .footer-heading {
+            flex: 1;
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+
+        .footer-heading h2 {
+            margin-bottom: 15px;
+            color: white;
+        }
+
+        .footer-heading a {
+            color: white;
             text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
         }
 
-        footer a:hover {
+        .footer-heading a:hover {
             text-decoration: underline;
+        }
+
+        .footer-emailform {
+            margin-top: 15px;
+        }
+
+        .footer-emailform input[type="email"] {
+            padding: 10px;
+            margin-right: 10px;
+            border-radius: 4px;
+            border: none;
+        }
+
+        .footer-emailform input[type="submit"] {
+            background-color: #FF8811;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .footer-emailform input[type="submit"]:hover {
+            background-color: #9DD9D2;
         }
     </style>
 </head>
 <body>
     <header>
-        <div id="logo"><img src="logo.png" alt="Logo"></div>
+        <div id="logo">
+            <img src="images/logo.png" alt="Logo">
+        </div>
         <nav>
             <a href="index.html">Home</a>
             <a href="merch.html">Merch</a>
-            <a href="cart.html">Cart</a>
+            <a href="vinyls.html">Vinyls</a>
             <a href="login.html">Login</a>
-            <a href="about.html">About Page</a>
-            <a href="contact.html">Contact Page</a>
+            <div id="darkModeButton"></div>
+            <a href="cart.html" id="cart">
+                <img src="images/cart.png" alt="Cart">
+            </a>
         </nav>
     </header>
 
     <div class="contact-container">
         <h2 style="text-align: center; color: #392F5A;">Contact Us</h2>
         <form id="contactForm">
-            <label for="name">Name <span style="color: red;">*</span></label>
+            <label for="name">Name</label>
             <input type="text" id="name" name="name" required>
 
-            <label for="email">Email Address <span style="color: red;">*</span></label>
+            <label for="email">Email Address</label>
             <input type="email" id="email" name="email" required>
-            <p class="error" id="emailError">Please enter a valid email address (e.g., @gmail.com, @outlook.com).</p>
 
-            <label for="reason">Reason for Contact <span style="color: red;">*</span></label>
+            <label for="reason">Reason for Contact</label>
             <select id="reason" name="reason" required>
                 <option value="">--Select a reason--</option>
                 <option value="orderIssue">Order Issue</option>
@@ -159,24 +218,39 @@
         </form>
     </div>
 
-    <footer>
-        <p>© 2024 Company Name | <a href="#">Privacy Policy</a></p>
-    </footer>
+    <div class="footer-container">
+        <div class="footer">
+            <div class="footer-heading f-1">
+                <h2>Links</h2>
+                <a href="index.html">Home</a>
+                <a href="merch.html">Merch</a>
+                <a href="vinyls.html">Vinyls</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
 
-    <script>
-        document.getElementById('contactForm').addEventListener('submit', function(event) {
-            const email = document.getElementById('email').value;
-            const emailError = document.getElementById('emailError');
-            const validDomains = ['gmail.com', 'outlook.com', 'yahoo.com'];
-            const emailDomain = email.split('@')[1];
+            <div class="footer-heading f-2">
+                <h2>Contact Us</h2>
+                <a href="#">Jobs</a>
+                <a href="#">Support</a>
+                <a href="#">Contact</a>
+                <a href="#">Sponsorships</a>
+            </div>
 
-            if (!validDomains.includes(emailDomain)) {
-                event.preventDefault();
-                emailError.style.display = 'block';
-            } else {
-                emailError.style.display = 'none';
-            }
-        });
-    </script>
+            <div class="footer-heading f-3">
+                <h2>Social Media</h2>
+                <a href="https://www.instagram.com">Instagram</a>
+                <a href="https://www.facebook.com">Facebook</a>
+                <a href="https://www.youtube.com">YouTube</a>
+                <a href="https://www.x.com">X</a>
+
+                <div class="footer-emailform">
+                    <h2>Join our newsletter</h2>
+                    <input type="email" placeholder="Enter your email address">
+                    <input type="submit" value="Sign up">
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
