@@ -109,6 +109,7 @@ body {
 .darkMode{
     background-color: rgb(41, 40, 40);
     color: #FFF8F0;
+    transition-duration: .3s;
 }
 
 .darkModeButtonLightened{
@@ -279,7 +280,7 @@ body {
     }
 }
 @media (max-width: 378px){
-    .middleRows{
+    #originalPadding{
         justify-content: center;
     }
 

@@ -69,6 +69,7 @@ header nav a:hover {
     max-width: 400px;
     margin: auto;
     margin-top: 120px;
+    margin-bottom: 30px;
 }
 
 .tab-container {

@@ -20,7 +20,6 @@ body{
     /* this ensures makes a flex container for the rows and makes them face downwards */
     display: flex;
     flex-direction: column;
-    transition: .3s;
 }
 
 .middleOriginalPadding{

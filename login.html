@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="css/baseTemplate.css">
+    <link rel="stylesheet" href="css/login.css">
     <style>
         /* General Styles */
         body {
-            background-color: #FFF8F0; /* Floral White */
+            /* background-color: #FFF8F0; */
             font-family: Arial, sans-serif;
             margin: 0;
             display: flex;
@@ -77,6 +78,7 @@
             max-width: 400px;
             margin: auto;
             margin-top: 120px;
+            margin-bottom: 30px;
         }
 
         .tab-container {
@@ -97,6 +99,10 @@
         .tab.active {
             color: #392F5A; /* Space Cadet */
             border-bottom: 2px solid #392F5A;
+        }
+
+        #registerTab {
+            color: black;
         }
 
         form {
@@ -193,21 +199,33 @@
         }
     </style>
 </head>
-<body>
+<body id="middle">
     <header>
-        <div id="logo">
-            <img src="images/logo.png" alt="Logo">
-        </div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="merch.html">Merch</a>
-            <a href="vinyls.html">Vinyls</a>
-            <a href="login.html">Login</a>
-            <div id="darkModeButton"></div>
-            <a href="cart.html" id="cart">
-                <img src="images/cart.png" alt="Cart">
+        <div id="topBanner">
+            <!-- placeholder for the logo-->
+            <a href="index.html" class="logo">
+                <img id="vinylLogo" src="images/file.png">
             </a>
-        </nav>
+            <!-- div container for the links (did this to be able to have an indent off the right of the screen (banner is in fixed position))-->
+            <div class="linksBox upperLinksBox">
+                <div class="linksBox">
+                    <a class="noDecor" href="index.html"><div class="links">Home</div></a>
+                    <a class="noDecor" href="merch.html"><div class="links">Merch</div></a>
+                </div>
+                <div class="linksBox">
+                    <a class="noDecor" href="viynl.html"><div class="links">Vinyls</div></a>
+                    <a class="noDecor" href="login.html"><div class="links">Login</div></a>
+                </div> 
+                <div class="linksBox">           
+                    <div id="darkModeButton" class="darkModeButtonLightened"></div>
+                    <!-- just a placeholder for the shopping cart image-->
+                    <a class="noDecor" href="cart.html">
+                        <div id="shoppingCart"><img id="shoppingCartImg" src="images/shopping-cart.jpg"
+                                alt="shopping cart icon"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
     </header>
 
     <div class="login-container">
@@ -260,5 +278,6 @@
             </div>
         </div>
     </div>
+    <script src="js/darkmode.js"></script>
 </body>
 </html>
