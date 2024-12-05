@@ -28,7 +28,8 @@ header #logo img {
 
 header nav {
     display: flex;
-    gap: 15px;
+    align-items: center;
+    gap: 20px;
 }
 
 header nav a {
@@ -41,27 +42,42 @@ header nav a:hover {
     text-decoration: underline;
 }
 
-/* Login and Contact Container Styles */
-.login-container,
+#darkModeButton {
+    height: 20px;
+    width: 20px;
+    background-color: yellow;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#cart img {
+    height: 30px;
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: white;
+}
+
+/* Contact Form Styles */
 .contact-container {
     background-color: white;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 90%;
-    max-width: 400px;
+    max-width: 600px;
     margin: auto;
     margin-top: 120px;
 }
 
-/* Form Styles */
 form {
     display: flex;
     flex-direction: column;
+    gap: 15px;
 }
 
 form label {
-    margin-bottom: 5px;
     font-weight: bold;
     color: #392F5A; /* Space Cadet */
 }
@@ -70,7 +86,6 @@ form input, form select, form textarea {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    margin-bottom: 15px;
     width: 100%;
 }
 
@@ -95,7 +110,7 @@ form button:hover {
 
 /* Footer Styles */
 .footer-container {
-    background-color: #392F5A; /* Space Cadet */
+    background-color: #392F5A;
     color: white;
     padding: 30px 20px;
 }
@@ -150,27 +165,6 @@ form button:hover {
 
 .footer-emailform input[type="submit"]:hover {
     background-color: #9DD9D2;
-}
-
-/* Tab Container (for login page) */
-.tab-container {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #ccc;
-}
-
-.tab {
-    width: 50%;
-    text-align: center;
-    padding: 10px 0;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.tab.active {
-    color: #392F5A; /* Space Cadet */
-    border-bottom: 2px solid #392F5A;
 }
 
 /* Responsive Design */
