@@ -42,13 +42,13 @@ header nav a:hover {
     text-decoration: underline;
 }
 
-#darkModeButton {
+/* #darkModeButton {
     height: 20px;
     width: 20px;
     background-color: yellow;
     border-radius: 50%;
     cursor: pointer;
-}
+} */
 
 #cart img {
     height: 30px;
